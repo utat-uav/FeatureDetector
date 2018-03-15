@@ -53,3 +53,11 @@ def detection(path):
 	# Show blobs
 	cv2.imshow("Keypoints", im_with_keypoints)
 	cv2.waitKey(0)
+
+#def main():
+#	path = "C:/Users/Chris Dryden/Desktop/projects/UTAT UAV/FeatureDetector/frame11.jpg"
+#	detection(path)
+#
+#
+#if __name__ == "__main__":
+#	main()
