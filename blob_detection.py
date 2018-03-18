@@ -8,17 +8,17 @@ def parameters():
 	params = cv2.SimpleBlobDetector_Params()
 
 	# Change thresholds
-	params.minThreshold = 10
-	params.maxThreshold = 200
+	params.minThreshold = 1
+	params.maxThreshold = 10
 
 
 	# Filter by Area.
 	params.filterByArea = True
-	params.minArea = 50
+	params.minArea = 10
 
 	# Filter by Circularity
 	params.filterByCircularity = True
-	params.minCircularity = 0.01
+	params.minCircularity = 0.60
 
 	# Filter by Convexity
 	params.filterByConvexity = True
