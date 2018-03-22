@@ -98,10 +98,16 @@ def calculate_distance_pitch(elevation):
 
 
 def demoDetection():
-	directory = "test/"
-	path = os.cwd()
+	directory = "/test/"
+	save_directory = "/saved/"
+	path = os.getcwd()
+	print(path)
 	for item in os.listdir(path + directory):
-		blob_detection.detection(path + directory + item)
+		print(item)
+		test_path = path + directory + item
+		save_path = path + save_directory + item
+		image = blob_detection.detection_return(test_path, save_path, item)
+
 
 
 
@@ -114,13 +120,16 @@ def demoDetection():
 
 
 def main():
-	cwd = os.getcwd()
-	path = "try/im0346.jpg"
-	print(path)
-	blob_detection.detection(path)
+	demoDetection()
+
+
+	# cwd = os.getcwd()
+	# path = "try/im0346.jpg"
+	# print(path)
+	# blob_detection.detection(path)
 
 
 
 
-#if __name__ == "__main__":
-#	main()
+if __name__ == "__main__":
+	main()
