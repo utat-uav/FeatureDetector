@@ -97,6 +97,15 @@ def calculate_distance_pitch(elevation):
 
 
 
+def demoDetection():
+	directory = "test/"
+	path = os.cwd()
+	for item in os.listdir(path + directory):
+		blob_detection.detection(path + directory + item)
+
+
+
+
 #def calculating_gps_location(gps_coordinate, elevation, pitch_degree, orientation):
 #	center_pixel
 
